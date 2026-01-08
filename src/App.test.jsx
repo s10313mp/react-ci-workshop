@@ -17,4 +17,8 @@ describe('App', () => {
     render(<App />)
     expect(screen.getByText(/Moja Aplikacja React/i)).toBeInTheDocument()
   })
+  it('this test will pass', () => {
+    render(<App />)
+    expect(screen.getByText(/Moja Aplikacja React/i)).toBeInTheDocument()
+  })
 })
