@@ -8,9 +8,9 @@ describe('App', () => {
     expect(screen.getByText(/Moja Aplikacja React/i)).toBeInTheDocument()
   })
 
-  it('has clickable button', () => {
+  it('has increment button', () => {
     render(<App />)
-    const button = screen.getByRole('button')
+    const button = screen.getByText(/count is/i)
     expect(button).toBeInTheDocument()
   })
   it('has custom title', () => {
